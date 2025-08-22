@@ -1,4 +1,4 @@
-# 🪙 Wallet Tracker - A Full-Stack Expense Tracker App
+# 🪙 Wallet Tracker - Expenditure Tracker with R.N & Express 💸
 
 Welcome to Wallet Tracker, a modern, mobile-first application designed to help you manage your finances with ease. This full-stack project features a secure backend API and an intuitive React Native mobile application, allowing users to track their income and expenses seamlessly.
 
@@ -8,23 +8,27 @@ This project was built from the ground up, covering everything from database des
 
 Here's a glimpse of the application's user flow and core features.
 
-| Sign Up | Verify Email | Sign In |
+| Sign Up ✅ | Verify Email 🪄 | Sign In 🔑 |
 | :---: | :---: | :---: |
 | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/signup-screen.jpg?raw=true" alt="Sign Up Screen" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/verify-screen.jpg?raw=true" alt="Verify Email Screen" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/signin-screen.jpg?raw=true" alt="Sign In Screen" width="350"/> |
 
-| Home Screen | New Transaction |
+| Home Screen 🏡 | New Transaction 📝|
 | :---: | :---: |
 | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/home-screen.jpg?raw=true" alt="Home Screen with Transactions" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/create-screen.jpg?raw=true" alt="New Transaction Screen" width="350"/> |
 
 
 ## ✨ Features
 
-- **Secure User Authentication:** Full sign-up and sign-in functionality, including email verification, powered by Clerk.
-- **Transaction Management:** Users can create, view, and delete their income and expense records.
-- **Financial Summary:** A dashboard that provides an at-a-glance view of total balance, total income, and total expenses.
-- **Categorization:** Simple and intuitive category selection for each transaction.
-- **Authenticated API:** All API endpoints are protected, ensuring users can only access their own financial data.
-- **Real-time Updates:** Pull-to-refresh functionality on the home screen to fetch the latest transactions.
+- ✅ **Secure User Authentication 🔐:** Full sign-up and sign-in functionality, including email verification, powered by Clerk.
+- ✅ **Transaction Management 🪙:** Users can create, view, and delete their income and expense records.
+- ✅ **Financial Summary 💵:** A dashboard that provides an at-a-glance view of total balance, total income, and total expenses.
+- ✅ **Categorization 📝:** Simple and intuitive category selection for each transaction.
+- ✅ **Authenticated API 🧑🏻‍💻:** All API endpoints are protected, ensuring users can only access their own financial data.
+- ✅ **Real-time Updates 🔃:** Pull-to-refresh functionality on the home screen to fetch the latest transactions.
+- ✅ **Create Screen ➕:** To add income or expense transactions.
+- ✅ **Delete transactions 🗑️:** To update balance.
+- ✅ **Logout 🚪:** To navigate back to login screen.
+  
 
 ## 🛠️ Tech Stack
 
