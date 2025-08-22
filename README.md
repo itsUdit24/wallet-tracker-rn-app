@@ -1,50 +1,116 @@
-# Welcome to your Expo app 👋
+# 🪙 Wallet Tracker - A Full-Stack Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to Wallet Tracker, a modern, mobile-first application designed to help you manage your finances with ease. This full-stack project features a secure backend API and an intuitive React Native mobile application, allowing users to track their income and expenses seamlessly.
 
-## Get started
+This project was built from the ground up, covering everything from database design and secure authentication to deployment on modern cloud platforms.
 
-1. Install dependencies
+## 📸 Screenshots
 
-   ```bash
-   npm install
-   ```
+Here's a glimpse of the application's user flow and core features.
 
-2. Start the app
+| Sign Up | Verify Email | Sign In |
+| :---: | :---: | :---: |
+| ![Sign Up Screen](<PASTE_SCREENSHOT_URL_HERE>) | ![Verify Email Screen](<PASTE_SCREENSHOT_URL_HERE>) | ![Sign In Screen](<PASTE_SCREENSHOT_URL_HERE>) |
 
-   ```bash
-   npx expo start
-   ```
+| Home Screen | New Transaction |
+| :---: | :---: |
+| ![Home Screen with Transactions](<PASTE_SCREENSHOT_URL_HERE>) | ![New Transaction Screen](<PASTE_SCREENSHOT_URL_HERE>) |
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Secure User Authentication:** Full sign-up and sign-in functionality, including email verification, powered by Clerk.
+- **Transaction Management:** Users can create, view, and delete their income and expense records.
+- **Financial Summary:** A dashboard that provides an at-a-glance view of total balance, total income, and total expenses.
+- **Categorization:** Simple and intuitive category selection for each transaction.
+- **Authenticated API:** All API endpoints are protected, ensuring users can only access their own financial data.
+- **Real-time Updates:** Pull-to-refresh functionality on the home screen to fetch the latest transactions.
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+This project utilizes a modern, full-stack JavaScript/TypeScript toolset.
 
-```bash
-npm run reset-project
-```
+| Area | Technology |
+| :--- | :--- |
+| **Frontend** | React Native, Expo, Expo Router |
+| **Backend** | Node.js, Express.js |
+| **Database** | PostgreSQL (hosted on Neon) |
+| **Authentication**| Clerk |
+| **Deployment** | Render.com (Backend), EAS (Mobile App) |
+| **API Tools** | Postman |
+| **Rate Limiting**| Upstash Redis |
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## 🚀 Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+To get a local copy up and running, follow these simple steps.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Prerequisites
 
-## Join the community
+- Node.js (v18 or later)
+- npm
+- Git
 
-Join our community of developers creating universal apps.
+### Local Development Setup
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is split into two parts: `backend` and `mobile`. You will need to run them in two separate terminals.
+
+1.  Clone the repository (or repositories).
+    ```sh
+    git clone <your-repo-url>
+    cd <your-repo-folder>
+    ```
+
+2.  **Set up the Backend:**
+    - In your first terminal, navigate to the backend folder.
+        ```sh
+        cd backend
+        ```
+    - Install the dependencies.
+        ```sh
+        npm install
+        ```
+    - Create a `.env` file in the `backend` folder and add your secret keys (see the `.env.example` section below).
+    - Start the backend server.
+        ```sh
+        npm run dev
+        ```
+    - The server will be running on `http://localhost:3000`.
+
+3.  **Set up the Frontend (Mobile App):**
+    - In a **second, separate terminal**, navigate to the mobile folder.
+        ```sh
+        cd mobile
+        ```
+    - Install the dependencies.
+        ```sh
+        npm install
+        ```
+    - Create a `.env` file in the `mobile` folder and add your public keys (see the `.env.example` section below).
+    - Start the Expo development server.
+        ```sh
+        npx expo start
+        ```
+    - Scan the QR code with the Expo Go app on your phone.
+
+### Environment Variables
+
+You will need to create two `.env` files for this project to run.
+
+**`backend/.env.example`**
+```env
+# Port for the local server
+PORT=3000
+
+# Full connection string from your Neon dashboard
+DATABASE_URL=<your_neon_postgres_connection_url>
+
+# Keys from your Upstash dashboard for rate limiting
+UPSTASH_REDIS_REST_URL=<your_redis_connection_url>
+UPSTASH_REDIS_REST_TOKEN=<your_redis_rest_token>
+
+# Secret key from your Clerk dashboard
+CLERK_SECRET_KEY=<your_clerk_secret_key>
+
+# URL of your live server (for the cron job to keep it awake)
+API_URL=<your_api_connection_url>
