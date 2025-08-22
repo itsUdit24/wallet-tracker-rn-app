@@ -55,7 +55,7 @@ To get a local copy up and running, follow these simple steps.
 - npm
 - Git
 
-### Local Development Setup
+## Local Development Setup ⚙️
 
 This project is split into two parts: `backend` and `mobile`. You will need to run them in two separate terminals.
 
