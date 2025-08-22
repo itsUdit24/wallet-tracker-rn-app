@@ -10,11 +10,11 @@ Here's a glimpse of the application's user flow and core features.
 
 | Sign Up | Verify Email | Sign In |
 | :---: | :---: | :---: |
-| ![Sign Up Screen](<PASTE_SCREENSHOT_URL_HERE>) | ![Verify Email Screen](<PASTE_SCREENSHOT_URL_HERE>) | ![Sign In Screen](<PASTE_SCREENSHOT_URL_HERE>) |
+| <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/signup-screen.jpg?raw=true" alt="Sign Up Screen" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/verify-screen.jpg?raw=true" alt="Verify Email Screen" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/signin-screen.jpg?raw=true" alt="Sign In Screen" width="350"/> |
 
 | Home Screen | New Transaction |
 | :---: | :---: |
-| ![Home Screen with Transactions](<PASTE_SCREENSHOT_URL_HERE>) | ![New Transaction Screen](<PASTE_SCREENSHOT_URL_HERE>) |
+| <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/home-screen.jpg?raw=true" alt="Home Screen with Transactions" width="350"/> | <img src="https://github.com/itsUdit24/wallet-tracker-rn-app/blob/main/screenshots/create-screen.jpg?raw=true" alt="New Transaction Screen" width="350"/> |
 
 
 ## ✨ Features
