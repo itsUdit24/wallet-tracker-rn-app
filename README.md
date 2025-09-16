@@ -1,4 +1,4 @@
-# 🪙 Wallet Tracker - Expenditure Tracker with R-N & Express 💸
+# 🪙 Wallet Tracker - Expenditure Tracker with React Native & Express 💸
 
 Welcome to Wallet Tracker, a modern, mobile-first application designed to help you manage your finances with ease. This full-stack project features a secure backend API and an intuitive React Native mobile application, allowing users to track their income and expenses seamlessly.
 
